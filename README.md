@@ -32,8 +32,6 @@ let vs_shader: Vec<u32> = SpirvBuilder::new(
 ```
 
 ## Supported Shader Languages
-
-Current state:
 - [x] WGSL
 - [x] GLSL
 - [ ] HLSL
