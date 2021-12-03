@@ -2,6 +2,8 @@
 
 `shader_to_spirv` crate provides very easy way to create a SPIR-V's output.
 
+But it's still in development could be bugs and some species of issues. If you found one of them, please, report or make PR!
+Always are welcome.
 ## Examples
 
 ```rust
