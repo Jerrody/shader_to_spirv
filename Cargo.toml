@@ -1,0 +1,12 @@
+[package]
+name = "shader_to_spirv"
+authors = ["Gheroghe Ugrik"]
+description = "Get SPIR-V's output easier than ever!"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+keywords = ["spir-v", "shader", "wgsl", "glsl", "parser"]
+repository = "https://github.com/Jerrody/scope_timer"
+edition = "2021"
+
+[dependencies]
+naga = { version = "0.7.1", features = ["wgsl-in", "glsl-in", "glsl-validate","spv-out"] }
