@@ -1,14 +1,17 @@
+#[derive(Copy, Clone)]
 pub enum ShaderType {
     Wgsl,
     Glsl,
 }
 
+#[derive(Copy, Clone)]
 pub enum ShaderStage {
     Vertex,
     Fragment,
     Compute,
 }
 
+#[derive(Clone)]
 pub struct ShaderInfo {
     pub shader_stage: ShaderStage,
     pub entry_point: String,
@@ -23,6 +26,7 @@ impl ShaderInfo {
     }
 }
 
+#[derive(Clone)]
 pub struct ShaderOptions {
     pub validation_flags: naga::valid::ValidationFlags,
     pub capabilities: naga::valid::Capabilities,
@@ -53,6 +57,7 @@ impl Default for ShaderOptions {
     }
 }
 
+#[derive(Clone)]
 struct Spirv<P: AsRef<std::path::Path>> {
     path: P,
     shader_type: ShaderType,
@@ -71,6 +76,7 @@ impl<P: AsRef<std::path::Path>> Spirv<P> {
     }
 }
 
+#[derive(Clone)]
 pub struct SpirvBuilder<P: AsRef<std::path::Path>>(Spirv<P>);
 
 impl<P: AsRef<std::path::Path>> SpirvBuilder<P> {
