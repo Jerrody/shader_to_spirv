@@ -4,6 +4,12 @@
 
 But it's still in development could be bugs and some species of issues. If you found one of them, please, report or make PR!
 Always are welcome.
+
+## Supported Shader Languages
+- [x] WGSL
+- [x] GLSL
+- [ ] HLSL
+
 ## Examples
 
 ```rust
@@ -32,8 +38,3 @@ let vs_shader: Vec<u32> = SpirvBuilder::new(
     .with_shader_type(ShaderStage::Fragment)
     .unwrap();
 ```
-
-## Supported Shader Languages
-- [x] WGSL
-- [x] GLSL
-- [ ] HLSL
